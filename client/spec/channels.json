@@ -1,0 +1,11 @@
+{
+    "name": "Channels",
+    "id": 2,
+    "type": "rw",
+    "fields": [
+        {
+            "name": "data",
+            "width": 16
+        }
+    ]
+}

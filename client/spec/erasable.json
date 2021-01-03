@@ -1,0 +1,15 @@
+{
+    "name": "Erasable",
+    "id": 0,
+    "type": "rw",
+    "fields": [
+        {
+            "name": "parity",
+            "width": 1
+        },
+        {
+            "name": "data",
+            "width": 15
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Fixed",
+    "id": 1,
+    "type": "r",
+    "fields": [
+        {
+            "name": "parity",
+            "width": 1
+        },
+        {
+            "name": "data",
+            "width": 15
+        }
+    ]
+}

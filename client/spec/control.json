@@ -1,0 +1,1070 @@
+{
+    "name": "Control",
+    "id": 32,
+    "registers": [
+        {
+            "addr": 0,
+            "name": "Start",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 1,
+            "name": "Stop",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "t12",
+                    "width": 1
+                },
+                {
+                    "name": "nisq",
+                    "width": 1
+                },
+                {
+                    "name": "s1",
+                    "width": 1
+                },
+                {
+                    "name": "s2",
+                    "width": 1
+                },
+                {
+                    "name": "w",
+                    "width": 1
+                },
+                {
+                    "name": "s_w",
+                    "width": 1
+                },
+                {
+                    "name": "s_i",
+                    "width": 1
+                },
+                {
+                    "name": "chan",
+                    "width": 1
+                },
+                {
+                    "name": "par",
+                    "width": 1
+                },
+                {
+                    "name": "i",
+                    "width": 1
+                },
+                {
+                    "name": "prog_step",
+                    "width": 1
+                },
+                {
+                    "name": "s1_s2",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 2,
+            "name": "StopCause",
+            "type": "r",
+            "fields": [
+                {
+                    "name": "t12",
+                    "width": 1
+                },
+                {
+                    "name": "nisq",
+                    "width": 1
+                },
+                {
+                    "name": "s1",
+                    "width": 1
+                },
+                {
+                    "name": "s2",
+                    "width": 1
+                },
+                {
+                    "name": "w",
+                    "width": 1
+                },
+                {
+                    "name": "s_w",
+                    "width": 1
+                },
+                {
+                    "name": "s_i",
+                    "width": 1
+                },
+                {
+                    "name": "chan",
+                    "width": 1
+                },
+                {
+                    "name": "par",
+                    "width": 1
+                },
+                {
+                    "name": "i",
+                    "width": 1
+                },
+                {
+                    "name": "prog_step",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 3,
+            "name": "Proceed",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 4,
+            "name": "MNHRPT",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "mnhrpt",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 5,
+            "name": "MNHNC",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "mnhnc",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 6,
+            "name": "S1S",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "s",
+                    "width": 12
+                }
+            ]
+        },
+        {
+            "addr": 7,
+            "name": "S1Bank",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "eb",
+                    "width": 3
+                },
+                {
+                    "name": "spare",
+                    "width": 1
+                },
+                {
+                    "name": "fext",
+                    "width": 3
+                },
+                {
+                    "name": "spare",
+                    "width": 3
+                },
+                {
+                    "name": "fb",
+                    "width": 5
+                }
+            ]
+        },
+        {
+            "addr": 8,
+            "name": "S1SIgnore",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "s",
+                    "width": 12
+                }
+            ]
+        },
+        {
+            "addr": 9,
+            "name": "S1BankIgnore",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "eb",
+                    "width": 3
+                },
+                {
+                    "name": "spare",
+                    "width": 1
+                },
+                {
+                    "name": "fext",
+                    "width": 3
+                },
+                {
+                    "name": "spare",
+                    "width": 3
+                },
+                {
+                    "name": "fb",
+                    "width": 5
+                }
+            ]
+        },
+        {
+            "addr": 10,
+            "name": "S2S",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "s",
+                    "width": 12
+                }
+            ]
+        },
+        {
+            "addr": 11,
+            "name": "S2Bank",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "eb",
+                    "width": 3
+                },
+                {
+                    "name": "spare",
+                    "width": 1
+                },
+                {
+                    "name": "fext",
+                    "width": 3
+                },
+                {
+                    "name": "spare",
+                    "width": 3
+                },
+                {
+                    "name": "fb",
+                    "width": 5
+                }
+            ]
+        },
+        {
+            "addr": 12,
+            "name": "S2SIgnore",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "s",
+                    "width": 12
+                }
+            ]
+        },
+        {
+            "addr": 13,
+            "name": "S2BankIgnore",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "eb",
+                    "width": 3
+                },
+                {
+                    "name": "spare",
+                    "width": 1
+                },
+                {
+                    "name": "fext",
+                    "width": 3
+                },
+                {
+                    "name": "spare",
+                    "width": 3
+                },
+                {
+                    "name": "fb",
+                    "width": 5
+                }
+            ]
+        },
+        {
+            "addr": 14,
+            "name": "WriteW",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "mode",
+                    "width": 3,
+                    "enum": {
+                        "ALL": 0,
+                        "S": 1,
+                        "I": 2,
+                        "S_I": 3,
+                        "P": 4,
+                        "P_I": 5,
+                        "P_S": 6
+                    }
+                },
+                {
+                    "name": "s1_s2",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 15,
+            "name": "TimeSwitches",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "t01",
+                    "width": 1
+                },
+                {
+                    "name": "t02",
+                    "width": 1
+                },
+                {
+                    "name": "t03",
+                    "width": 1
+                },
+                {
+                    "name": "t04",
+                    "width": 1
+                },
+                {
+                    "name": "t05",
+                    "width": 1
+                },
+                {
+                    "name": "t06",
+                    "width": 1
+                },
+                {
+                    "name": "t07",
+                    "width": 1
+                },
+                {
+                    "name": "t08",
+                    "width": 1
+                },
+                {
+                    "name": "t09",
+                    "width": 1
+                },
+                {
+                    "name": "t10",
+                    "width": 1
+                },
+                {
+                    "name": "t11",
+                    "width": 1
+                },
+                {
+                    "name": "t12",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 16,
+            "name": "PulseSwitches",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "a",
+                    "width": 1
+                },
+                {
+                    "name": "l",
+                    "width": 1
+                },
+                {
+                    "name": "q",
+                    "width": 1
+                },
+                {
+                    "name": "z",
+                    "width": 1
+                },
+                {
+                    "name": "rch",
+                    "width": 1
+                },
+                {
+                    "name": "wch",
+                    "width": 1
+                },
+                {
+                    "name": "g",
+                    "width": 1
+                },
+                {
+                    "name": "b",
+                    "width": 1
+                },
+                {
+                    "name": "y",
+                    "width": 1
+                },
+                {
+                    "name": "ru",
+                    "width": 1
+                },
+                {
+                    "name": "sp1",
+                    "width": 1
+                },
+                {
+                    "name": "sp2",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 17,
+            "name": "WCompVal",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "val",
+                    "width": 16
+                }
+            ]
+        },
+        {
+            "addr": 18,
+            "name": "WCompIgnore",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "ignore",
+                    "width": 16
+                }
+            ]
+        },
+        {
+            "addr": 19,
+            "name": "WCompParity",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "parity",
+                    "width": 2
+                },
+                {
+                    "name": "ignore",
+                    "width": 2
+                }
+            ]
+        },
+        {
+            "addr": 20,
+            "name": "ICompVal",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "sq",
+                    "width": 6
+                },
+                {
+                    "name": "sqext",
+                    "width": 1
+                },
+                {
+                    "name": "st",
+                    "width": 3
+                },
+                {
+                    "name": "br",
+                    "width": 2
+                }
+            ]
+        },
+        {
+            "addr": 21,
+            "name": "ICompIgnore",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "sq",
+                    "width": 6
+                },
+                {
+                    "name": "sqext",
+                    "width": 1
+                },
+                {
+                    "name": "st",
+                    "width": 3
+                },
+                {
+                    "name": "br",
+                    "width": 2
+                }
+            ]
+        },
+        {
+            "addr": 22,
+            "name": "ICompStatus",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "iip",
+                    "width": 1
+                },
+                {
+                    "name": "inhl",
+                    "width": 1
+                },
+                {
+                    "name": "inkl",
+                    "width": 1
+                },
+                {
+                    "name": "ld",
+                    "width": 1
+                },
+                {
+                    "name": "chld",
+                    "width": 1
+                },
+                {
+                    "name": "rd",
+                    "width": 1
+                },
+                {
+                    "name": "chrd",
+                    "width": 1
+                },
+                {
+                    "name": "iip_ign",
+                    "width": 1
+                },
+                {
+                    "name": "inhl_ign",
+                    "width": 1
+                },
+                {
+                    "name": "inkl_ign",
+                    "width": 1
+                },
+                {
+                    "name": "ld_ign",
+                    "width": 1
+                },
+                {
+                    "name": "chld_ign",
+                    "width": 1
+                },
+                {
+                    "name": "rd_ign",
+                    "width": 1
+                },
+                {
+                    "name": "chrd_ign",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 23,
+            "name": "LoadReadS1S2",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "load_preset",
+                    "width": 1
+                },
+                {
+                    "name": "load_chan",
+                    "width": 1
+                },
+                {
+                    "name": "read_preset",
+                    "width": 1
+                },
+                {
+                    "name": "read_chan",
+                    "width": 1
+                },
+                {
+                    "name": "start_preset",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 24,
+            "name": "BankS",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "s_only",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 25,
+            "name": "AdvanceS",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 26,
+            "name": "CRSBankEnable0",
+            "type": "w",
+            "fields": [
+                {
+                    "name": "f0",
+                    "width": 1
+                },
+                {
+                    "name": "f1",
+                    "width": 1
+                },
+                {
+                    "name": "f2",
+                    "width": 1
+                },
+                {
+                    "name": "f3",
+                    "width": 1
+                },
+                {
+                    "name": "f4",
+                    "width": 1
+                },
+                {
+                    "name": "f5",
+                    "width": 1
+                },
+                {
+                    "name": "f6",
+                    "width": 1
+                },
+                {
+                    "name": "f7",
+                    "width": 1
+                },
+                {
+                    "name": "f10",
+                    "width": 1
+                },
+                {
+                    "name": "f11",
+                    "width": 1
+                },
+                {
+                    "name": "f12",
+                    "width": 1
+                },
+                {
+                    "name": "f13",
+                    "width": 1
+                },
+                {
+                    "name": "f14",
+                    "width": 1
+                },
+                {
+                    "name": "f15",
+                    "width": 1
+                },
+                {
+                    "name": "f16",
+                    "width": 1
+                },
+                {
+                    "name": "f17",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 27,
+            "name": "CRSBankEnable1",
+            "type": "w",
+            "fields": [
+                {
+                    "name": "f20",
+                    "width": 1
+                },
+                {
+                    "name": "f21",
+                    "width": 1
+                },
+                {
+                    "name": "f22",
+                    "width": 1
+                },
+                {
+                    "name": "f23",
+                    "width": 1
+                },
+                {
+                    "name": "f24",
+                    "width": 1
+                },
+                {
+                    "name": "f25",
+                    "width": 1
+                },
+                {
+                    "name": "f26",
+                    "width": 1
+                },
+                {
+                    "name": "f27",
+                    "width": 1
+                },
+                {
+                    "name": "f30",
+                    "width": 1
+                },
+                {
+                    "name": "f31",
+                    "width": 1
+                },
+                {
+                    "name": "f32",
+                    "width": 1
+                },
+                {
+                    "name": "f33",
+                    "width": 1
+                },
+                {
+                    "name": "f34",
+                    "width": 1
+                },
+                {
+                    "name": "f35",
+                    "width": 1
+                },
+                {
+                    "name": "f36",
+                    "width": 1
+                },
+                {
+                    "name": "f37",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 28,
+            "name": "CRSBankEnable2",
+            "type": "w",
+            "fields": [
+                {
+                    "name": "f40",
+                    "width": 1
+                },
+                {
+                    "name": "f41",
+                    "width": 1
+                },
+                {
+                    "name": "f42",
+                    "width": 1
+                },
+                {
+                    "name": "f43",
+                    "width": 1
+                },
+                {
+                    "name": "f44",
+                    "width": 1
+                },
+                {
+                    "name": "f45",
+                    "width": 1
+                },
+                {
+                    "name": "f46",
+                    "width": 1
+                },
+                {
+                    "name": "f47",
+                    "width": 1
+                },
+                {
+                    "name": "f50",
+                    "width": 1
+                },
+                {
+                    "name": "f51",
+                    "width": 1
+                },
+                {
+                    "name": "f52",
+                    "width": 1
+                },
+                {
+                    "name": "f53",
+                    "width": 1
+                },
+                {
+                    "name": "f54",
+                    "width": 1
+                },
+                {
+                    "name": "f55",
+                    "width": 1
+                },
+                {
+                    "name": "f56",
+                    "width": 1
+                },
+                {
+                    "name": "f57",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 29,
+            "name": "CRSBankEnable3",
+            "type": "w",
+            "fields": [
+                {
+                    "name": "f60",
+                    "width": 1
+                },
+                {
+                    "name": "f61",
+                    "width": 1
+                },
+                {
+                    "name": "f62",
+                    "width": 1
+                },
+                {
+                    "name": "f63",
+                    "width": 1
+                },
+                {
+                    "name": "f64",
+                    "width": 1
+                },
+                {
+                    "name": "f65",
+                    "width": 1
+                },
+                {
+                    "name": "f66",
+                    "width": 1
+                },
+                {
+                    "name": "f67",
+                    "width": 1
+                },
+                {
+                    "name": "f70",
+                    "width": 1
+                },
+                {
+                    "name": "f71",
+                    "width": 1
+                },
+                {
+                    "name": "f72",
+                    "width": 1
+                },
+                {
+                    "name": "f73",
+                    "width": 1
+                },
+                {
+                    "name": "f74",
+                    "width": 1
+                },
+                {
+                    "name": "f75",
+                    "width": 1
+                },
+                {
+                    "name": "f76",
+                    "width": 1
+                },
+                {
+                    "name": "f77",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 30,
+            "name": "EMSBankEnable",
+            "type": "w",
+            "fields": [
+                {
+                    "name": "e0",
+                    "width": 1
+                },
+                {
+                    "name": "e1",
+                    "width": 1
+                },
+                {
+                    "name": "e2",
+                    "width": 1
+                },
+                {
+                    "name": "e3",
+                    "width": 1
+                },
+                {
+                    "name": "e4",
+                    "width": 1
+                },
+                {
+                    "name": "e5",
+                    "width": 1
+                },
+                {
+                    "name": "e6",
+                    "width": 1
+                },
+                {
+                    "name": "e7",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 48,
+            "name": "Doscal",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "doscal",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 49,
+            "name": "Dbltst",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "dbltst",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 64,
+            "name": "NHALGA",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "nhalga",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 65,
+            "name": "STRT1",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "strt1",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 66,
+            "name": "STRT2",
+            "type": "rw",
+            "fields": [
+                {
+                    "name": "strt2",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 80,
+            "name": "Downrupt",
+            "type": "w",
+            "fields": [
+                {
+                    "name": "downrupt",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 81,
+            "name": "Handrupt",
+            "type": "w",
+            "fields": [
+                {
+                    "name": "handrupt",
+                    "width": 1
+                }
+            ]
+        },
+        {
+            "addr": 112,
+            "name": "LoadS",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 113,
+            "name": "LoadPreset",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 114,
+            "name": "LoadChan",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 115,
+            "name": "ReadS",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 116,
+            "name": "ReadPreset",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 117,
+            "name": "ReadChan",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 118,
+            "name": "StartS",
+            "type": "w",
+            "fields": []
+        },
+        {
+            "addr": 119,
+            "name": "StartPreset",
+            "type": "w",
+            "fields": []
+        }
+    ]
+}

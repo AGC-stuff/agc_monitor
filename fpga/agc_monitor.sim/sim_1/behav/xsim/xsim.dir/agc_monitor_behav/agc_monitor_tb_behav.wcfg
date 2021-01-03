@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="agc_monitor_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="agc_monitor_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="79335973001fs"></ZoomEndTime>
+      <Cursor1Time time="43014800000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="40" />
+   <wvobject type="logic" fp_name="/agc_monitor_tb/rxf_n">
+      <obj_property name="ElementShortName">rxf_n</obj_property>
+      <obj_property name="ObjectShortName">rxf_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/usb_if/oe_n">
+      <obj_property name="ElementShortName">oe_n</obj_property>
+      <obj_property name="ObjectShortName">oe_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/rd_n">
+      <obj_property name="ElementShortName">rd_n</obj_property>
+      <obj_property name="ObjectShortName">rd_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/data">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/cmd_ctrl/cmd">
+      <obj_property name="ElementShortName">cmd[39:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd[39:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/cmd_ctrl/cmd_ready">
+      <obj_property name="ElementShortName">cmd_ready</obj_property>
+      <obj_property name="ObjectShortName">cmd_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/cmd_ctrl/state">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/cmd_ctrl/read_msg_ready">
+      <obj_property name="ElementShortName">read_msg_ready</obj_property>
+      <obj_property name="ObjectShortName">read_msg_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/cmd_ctrl/read_msg">
+      <obj_property name="ElementShortName">read_msg[39:0]</obj_property>
+      <obj_property name="ObjectShortName">read_msg[39:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/ctrl_regs/read_en">
+      <obj_property name="ElementShortName">read_en</obj_property>
+      <obj_property name="ObjectShortName">read_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/ctrl_regs/read_data">
+      <obj_property name="ElementShortName">read_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/usb_if/msg_sndr/state">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/usb_if/msg_sndr/out_byte">
+      <obj_property name="ElementShortName">out_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/usb_if/msg_sndr/out_byte_ready">
+      <obj_property name="ElementShortName">out_byte_ready</obj_property>
+      <obj_property name="ObjectShortName">out_byte_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/usb_if/read_fifo_ready">
+      <obj_property name="ElementShortName">read_fifo_ready</obj_property>
+      <obj_property name="ObjectShortName">read_fifo_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/usb_if/state">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/usb_if/tx_byte_read_en">
+      <obj_property name="ElementShortName">tx_byte_read_en</obj_property>
+      <obj_property name="ObjectShortName">tx_byte_read_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/txe_n">
+      <obj_property name="ElementShortName">txe_n</obj_property>
+      <obj_property name="ObjectShortName">txe_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/wr_n">
+      <obj_property name="ElementShortName">wr_n</obj_property>
+      <obj_property name="ObjectShortName">wr_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/mon_regs/mwag">
+      <obj_property name="ElementShortName">mwag</obj_property>
+      <obj_property name="ObjectShortName">mwag</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/mon_regs/a">
+      <obj_property name="ElementShortName">a[16:1]</obj_property>
+      <obj_property name="ObjectShortName">a[16:1]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/mnhnc">
+      <obj_property name="ElementShortName">mnhnc</obj_property>
+      <obj_property name="ObjectShortName">mnhnc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/mnisq">
+      <obj_property name="ElementShortName">mnisq</obj_property>
+      <obj_property name="ObjectShortName">mnisq</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/mstp">
+      <obj_property name="ElementShortName">mstp</obj_property>
+      <obj_property name="ObjectShortName">mstp</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/mt">
+      <obj_property name="ElementShortName">mt[12:1]</obj_property>
+      <obj_property name="ObjectShortName">mt[12:1]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/proceed_req">
+      <obj_property name="ElementShortName">proceed_req</obj_property>
+      <obj_property name="ObjectShortName">proceed_req</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/mt">
+      <obj_property name="ElementShortName">mt[12:1]</obj_property>
+      <obj_property name="ObjectShortName">mt[12:1]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/mload">
+      <obj_property name="ElementShortName">mload</obj_property>
+      <obj_property name="ObjectShortName">mload</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/mreqin">
+      <obj_property name="ElementShortName">mreqin</obj_property>
+      <obj_property name="ObjectShortName">mreqin</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/periph_insts/complete">
+      <obj_property name="ElementShortName">complete</obj_property>
+      <obj_property name="ObjectShortName">complete</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/cmd_ctrl/state">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/ctrl_regs/periph_load">
+      <obj_property name="ElementShortName">periph_load</obj_property>
+      <obj_property name="ObjectShortName">periph_load</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/periph_insts/readch">
+      <obj_property name="ElementShortName">readch</obj_property>
+      <obj_property name="ObjectShortName">readch</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/periph_insts/state">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/ctrl_regs/s1_s">
+      <obj_property name="ElementShortName">s1_s[12:1]</obj_property>
+      <obj_property name="ObjectShortName">s1_s[12:1]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/ctrl_regs/w_comp_val">
+      <obj_property name="ElementShortName">w_comp_val[16:1]</obj_property>
+      <obj_property name="ObjectShortName">w_comp_val[16:1]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/mdt">
+      <obj_property name="ElementShortName">mdt[16:1]</obj_property>
+      <obj_property name="ObjectShortName">mdt[16:1]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/periph_insts/request">
+      <obj_property name="ElementShortName">request[4:0]</obj_property>
+      <obj_property name="ObjectShortName">request[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/agc_monitor_tb/agc_mon/periph_insts/state">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/agc_monitor_tb/agc_mon/periph_insts/monwt">
+      <obj_property name="ElementShortName">monwt</obj_property>
+      <obj_property name="ObjectShortName">monwt</obj_property>
+   </wvobject>
+</wave_config>

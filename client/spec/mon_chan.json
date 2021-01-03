@@ -1,0 +1,64 @@
+{
+    "name": "MonChan",
+    "id": 34,
+    "registers": [
+        {
+            "addr": 7,
+            "name": "FEXT",
+            "type": "r",
+            "fields": [
+                {
+                    "name": "spare",
+                    "width": 4
+                },
+                {
+                    "name": "fext",
+                    "width": 3
+                }
+            ]
+        },
+        {
+            "addr": 63,
+            "name": "Restart",
+            "type": "r",
+            "fields": [
+                {
+                    "name": "parity_fail",
+                    "width": 1
+                },
+                {
+                    "name": "parity_erasable",
+                    "width": 1
+                },
+                {
+                    "name": "tc_trap",
+                    "width": 1
+                },
+                {
+                    "name": "rupt_lock",
+                    "width": 1
+                },
+                {
+                    "name": "night_watchman",
+                    "width": 1
+                },
+                {
+                    "name": "voltage_fail",
+                    "width": 1
+                },
+                {
+                    "name": "counter_fail",
+                    "width": 1
+                },
+                {
+                    "name": "scaler_fail",
+                    "width": 1
+                },
+                {
+                    "name": "scaler_double",
+                    "width": 1
+                }
+            ]
+        }
+    ]
+}
